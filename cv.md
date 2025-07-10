@@ -27,7 +27,7 @@ I am particularly interested in front-end development because it allows me to se
 
 ## Languages
 
-* Uzbek — Native language
+* Uzbek — Native
 * Russian — B2
 * English — B2
 
