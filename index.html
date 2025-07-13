@@ -7,91 +7,99 @@
     <link rel="stylesheet" href="style.css">
 </head>
     <body>
-        <nav class="nav">
-            <ul class="nav-list">
-                <li><a href="#contacts" class="nav-link">Contacts</a></li>
-                <li><a href="#about me" class="nav-link">About me</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-            </ul>
-        </nav>
+        <header>
+            <div class="container">
+                <nav class="nav">
+                    <ul class="nav-list">
+                        <li><a href="#contacts" class="nav-link">Contacts</a></li>
+                        <li><a href="#about me" class="nav-link">About me</a></li>
+                        <li><a href="#experience" class="nav-link">Experience</a></li>
+                        <li><a href="#skills" class="nav-link">Skills</a></li>
+                        <li><a href="#education" class="nav-link">Education</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>    
         
         <main>
-            <section class="left-side">
-                    <section id="basic-info">
-                        <img src="assets/img/avatar.png" alt="my photo" height="200" width="200">
-                        <h1>Fayzullaxon</h1>
-                        <h1>Sharipxanov</h1>
-                        <h2>Front-end developer</h2>
+            <div class="container">
+                <section class="left-side">
+                        <section id="basic-info">
+                            <img src="assets/img/avatar.png" alt="my photo" class="avatar">
+                            <h1>Fayzullaxon Sharipxanov</h1>
+                            <h2>Front-end developer</h2>
+                        </section>
+
+
+                        <section id="contacts">
+                            <h2>Contacts</h2>
+                            <p>Phone: +998 90 000-00-00</p>
+                            <p>Location: Tashkent,</p>
+                            <p>Email: <a href="mailto:deltaframe97@gmail.com">deltaframe97@gmail.com</a></p>
+                        </section>
+
+                        <section id="about me">
+                            <h2>About Me</h2>
+                            <p>I am 19 years old and currently studying at university. I am eager to learn new skills and grow both personally and professionally.I am particularly interested in front-end development because it allows me to see the immediate results of my work and create interactive experiences.</p>
+                        </section>
+                </section>
+                
+                <section class="right-side">
+                    <section id="experience">
+                        <h2>Experience</h2>
                     </section>
 
-
-                    <section id="contacts">
-                        <h2>Contacts</h2>
-                        <p>Phone: +998 90 000-00-00</p>
-                        <p>Location: Tashkent,</p>
-                        <p>Email: <a href="mailto:deltaframe97@gmail.com">deltaframe97@gmail.com</a></p>
+                    <section id="skills">
+                        <h2>Skills</h2>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>Python</li>
+                            <li>C</li>
+                        </ul>
                     </section>
 
-                    <section id="about me">
-                        <h2>About Me</h2>
-                        <p>I am 19 years old and currently studying at university. I am eager to learn new skills and grow both personally and professionally.I am particularly interested in front-end development because it allows me to see the immediate results of my work and create interactive experiences.</p>
+                    <section id="code">
+                        <h2>Code example</h2>
+                        <pre><code>
+        numbers = [3, -1, -2, 1, 0, 4, -4, 5, 8, 10]
+        n = len(numbers)
+        counter=0
+
+        for i in range(1, 1 << n):
+            subset = []
+            subset_sum = 0
+
+            for j in range(n):
+                if i & (1 << j):
+                    subset.append(numbers[j])
+                    subset_sum += numbers[j]
+                                    
+            if subset_sum == 0:
+                print(subset) 
+                counter +=1
+
+
+        print(counter)
+                        </code></pre>
                     </section>
-            </section>
-            
-            <section class="right-side">
-                <section id="experience">
-                    <h2>Experience</h2>
+
+                    <section id="education">
+                        <h2>Education</h2>
+                        <h4>Turin Polytechnic University in Tashkent</h4>
+                    </section>
                 </section>
-
-                <section id="skills">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>Python</li>
-                        <li>C</li>
-                    </ul>
-                </section>
-
-                <section id="code">
-                    <h2>Code example</h2>
-                    <pre><code>
-                        numbers = [3, -1, -2, 1, 0, 4, -4, 5, 8, 10]
-                        n = len(numbers)
-                        counter=0
-
-                        for i in range(1, 1 << n):
-                            subset = []
-                            subset_sum = 0
-
-                            for j in range(n):
-                                if i & (1 << j):
-                                    subset.append(numbers[j])
-                                    subset_sum += numbers[j]
-                                
-                            if subset_sum == 0:
-                                print(subset) 
-                                counter +=1
-
-
-                        print(counter)
-                    </code></pre>
-                </section>
-
-                <section id="education">
-                    <h2>Education</h2>
-                    <h4>Turin Polytechnic University in Tashkent</h4>
-                </section>
-            </section>        
+            </div>        
         </main>
         <section class="footer">
-            <p>Created in 2025</p>
-        <footer>
-            <a href="https://github.com/Fayzullo05"><img src="assets/img/githubicon.jpg" alt="My GitHub" height="40" width="40"></a>
-            <a href="https://t.me/Fayzullo05"><img src="assets/img/telegramicon.png" alt="My Telegram" height="40" width="40"></a>
-            <a href="https://rs.school/courses/javascript-ru"><img src="assets/img/rs-school-logo.svg" alt="Course link" height="40" width="40"></a>
-        </footer>
+            <footer>
+                <div class="container">
+                    <a href="https://github.com/Fayzullo05" class="social_media"><img src="assets/img/githubicon.jpg" alt="My GitHub" height="40" width="40"></a>
+                    <a href="https://t.me/Fayzullo05" class="social_media"><img src="assets/img/telegramicon.png" alt="My Telegram" height="40" width="40"></a>
+                    <a href="https://rs.school/courses/javascript-ru" class="social_media"><img src="assets/img/rs-school-logo.svg" alt="Course link" height="40" width="40"></a>
+                    <span class="year">Created in 2025</span>
+                </div>
+            </footer>
+        </section>
     </body>
 </html>
