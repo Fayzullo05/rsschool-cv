@@ -12,7 +12,7 @@
                 <nav class="nav">
                     <ul class="nav-list">
                         <li><a href="#contacts" class="nav-link">Contacts</a></li>
-                        <li><a href="#about me" class="nav-link">About me</a></li>
+                        <li><a href="#about_me" class="nav-link">About me</a></li>
                         <li><a href="#experience" class="nav-link">Experience</a></li>
                         <li><a href="#skills" class="nav-link">Skills</a></li>
                         <li><a href="#education" class="nav-link">Education</a></li>
@@ -38,7 +38,7 @@
                             <p>Email: <a href="mailto:deltaframe97@gmail.com">deltaframe97@gmail.com</a></p>
                         </section>
 
-                        <section id="about me">
+                        <section id="about_me">
                             <h2>About Me</h2>
                             <p>I am 19 years old and currently studying at university. I am eager to learn new skills and grow both personally and professionally.I am particularly interested in front-end development because it allows me to see the immediate results of my work and create interactive experiences.</p>
                         </section>
@@ -66,12 +66,12 @@
         n = len(numbers)
         counter=0
 
-        for i in range(1, 1 << n):
+        for i in range(1, 2 ** n):
             subset = []
             subset_sum = 0
 
             for j in range(n):
-                if i & (1 << j):
+                if i & (2 ** j):
                     subset.append(numbers[j])
                     subset_sum += numbers[j]
                                     
@@ -103,3 +103,4 @@
         </section>
     </body>
 </html>
+
