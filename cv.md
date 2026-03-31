@@ -31,6 +31,10 @@ I am particularly interested in front-end development because it allows me to se
 * Russian — B2
 * English — B2
 
+---
+
+*AI Assistance: Claude Sonnet 4.5*
+
 
 
 
